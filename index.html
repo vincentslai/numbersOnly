@@ -1,0 +1,40 @@
+<!DOCKTYPE html>
+<html>
+<head>
+	<title>Coding Dojo | Numbers only</title>
+</head>
+<body>
+	<h1>Numbers Only</h1>
+	<p>Make a function that copies an array, ONLY accepting the items that are numbers.</p>
+	<p><b>IT SHOULD <i>RETURN</i> A NEW ARRAY</b></p>
+	<p>var newArray = numbersOnly([1, "apple", -3, "orange", 0.5]);</p>
+	<p>// newArray is [1, -3, 0.5]</p>
+	
+	<h3><b>HINT</b></h3>
+
+	<p>Use <i>typeof</i> to determine type (ex: <i>typeof 24 === "number"</i> would be true)</p>
+
+	<script>
+	var originArray = [1, "apple", -3, "orange", 0.5, "banana", 10.02];
+	var newArray =[];
+	numbersOnly();
+
+	function numbersOnly(){
+		for (var x = 0; x<originArray.length; x++){
+
+			if ((typeof(originArray[x]) === 'number')) 
+			{
+				newArray.push(originArray[x]);
+			}
+			
+		}
+		for (var y= 0; y<newArray.length; y++)
+		{
+			console.log(newArray[y]);
+		}
+	}
+
+	</script>
+
+</body>
+</html>
